@@ -2,11 +2,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=ZCOOL+KuaiLe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Raleway:ital,wght@1,600&family=ZCOOL+KuaiLe&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #eee;
     color: #333;
     /*font-family: 'Hina Mincho', serif;*/
     /*font-family: 'ZCOOL KuaiLe', cursive;*/
     font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+
+header {
+    border: 2px red solid;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header .brand{
+    display: flex;
+    flex-direction: column;
+    /* color: white; */
+    text-align: center;
+    padding: 5px 0 10px 0;
+    font-size: 1.4em;
+}
+
+ul li{
+    list-style: none;
+}
+
+.navbar{
+    background-color: thistle;
+}
+
+.nav-links{
+   display: flex;
+   justify-content: space-around;
+}
+
+.nav-links li{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.nav-links li:hover{
+    background-color: teal;
 }
 
