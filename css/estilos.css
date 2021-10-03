@@ -10,7 +10,7 @@ body{
 
 header{
     background-color: #CD5C5C;
-    padding: 16px 0;
+    padding: 10px 0;
     max-height: 150px;
 }
 
@@ -74,18 +74,13 @@ div .testimonio{
     border-radius: 10px 0 10px 0;
 }
 
-footer{
-    background-color: #ccc;
-    margin-top: 10px;
-    padding: 20px;
-    text-align: center;
-    clear: both;
-    /* border-top: 5px solid black; */
-}
-
 .holder{
     max-width: 960px;
     margin: 0 auto;
+}
+
+.columnas .bienvenidos{
+    margin-bottom: 2em;
 }
 
 h2{
@@ -127,11 +122,17 @@ h2{
     margin-top: 10px;
 }
 
-
+footer{
+    background-color: #ccc;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
 
 /* Inicio Pagina NOSOTROS */
 .historia p{
-    font-size: 13px;
+    font-size: 1em;
 }
 
 .personas{
@@ -147,6 +148,10 @@ h2{
     padding: 8px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    transition: all .5s;
+    -moz-transition: all 0 .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 .persona img{
@@ -171,6 +176,11 @@ h2{
     font-size: 13px;
 }
 
+.personas .persona:hover{
+    border-bottom: 10px solid #FFA07A;
+    transform: translateY(-2%);
+}
+
 
 /* Fin de NOSOTROS */
 
@@ -178,16 +188,20 @@ h2{
 /* INICIO NOVEDADES */
 
 main .novedades{
-    /* border: 1px solid black; */
     border-left: 10px solid #FFA07A;
     border-radius: 10px;
     margin-top: 6px;
     padding-left: 10px;
+    transition: all .5s;
+    -moz-transition: all 0 .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 main .novedades:hover{
 	box-shadow: 1px 1px 5px 3px grey;
-    transform: translateY(-2%);
+    transform: translateY(-2%) translateX(.5%);
+    border-left: 10px solid #8B0000;
 }
 
 .novedades h3{
@@ -209,6 +223,25 @@ main .novedades:hover{
 
 .redes{
     float: right;
+}
+
+.redes p{
+    text-align: center;
+}  
+
+.contacto,
+.redes,
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+.redes li{
+    margin: 45px;
+}
+
+.redes li a{
+    text-decoration: none;
 }
 
 .formulario label{
@@ -238,8 +271,12 @@ main .novedades:hover{
     background-color: #F08080;
     color: white;
     box-shadow: 0 0 10px grey;
-    /* position: relative;
-    /* left: 50%; */ /*no es responsivo  */
+    transition: all .5s;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #8B0000;
+    cursor: pointer;
 }
 
 .formulario .centrar{
