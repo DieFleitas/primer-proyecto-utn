@@ -1,77 +1,207 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Raleway:ital,wght@1,600&family=ZCOOL+KuaiLe&display=swap');
 
-:root{
-    --bgColor: #3d5a80;
-    --secondaryBg: #98c1d9;
-    --menuLinkBg: #293241;
+/* font-family: 'Open Sans', sans-serif; */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-*{
+header{
+    background-color: #2e64a1;
+    padding: 16px 0;
+}
+
+header h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+}
+
+nav{
+    background-color: #6da9ed;
+}
+
+nav ul{
+    list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 24.6%;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: #4c67a5;
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+
+footer{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+.bienvenidos{
+    width: 75%;
+    float: left;
+}
+
+.testimonios{
+    width: 25%;
+    float: right;
+}
+
+.bienvenidos p{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 18px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inicio Pagina NOSOTROS */
+.historia p{
+    font-size: 13px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    width: 18%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-html{
-    background-color: var(--bgColor);
-    width: 100%;
+.persona img{
+    max-width: 75%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 10px;
 }
 
-body{
-    color: #f3f3f3;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--bgColor);
+.persona h5,
+.persona h6{
+    margin: 0;
+    color: #2e64a1;
+    font-weight: normal;
 }
 
-a{
-    text-decoration: none;
+.persona h6{
+    font-style: italic;
 }
 
-/* SECCION HEADER */
+.persona p{
+    font-size: 13px;
+}
 
-header {
+
+
+
+
+/* Fin de NOSOTROS */
+
+/* INICIO CONTACTO */
+.contacto,
+.redes{
+    width: 50%;
+}
+
+.contacto{
+    float: left;
+}
+
+.redes{
+    float: right;
+}
+
+.formulario label{
+    width: 22%;
+    /* background-color: yellow; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario input,
+.formulario textarea{
+    background-color: #ddd;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    font-size: 13px;
+    box-shadow: 0 0 5px gray;
+}
+
+.formulario textarea{
+    height: 150px;
+    resize: none;
+}
+
+.formulario input[type="submit"]{
+    width: auto;
+    background-color: #6da9ed;
+    color: white;
+    box-shadow: 0 0 10px grey;
+    /* position: relative;
+    /* left: 50%; */ /*no es responsivo  */
+}
+
+.formulario .centrar{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
 }
 
-header .brand{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 5px 0 10px 0;
-    font-size: 1.4em;
-}
-
-ul li{
-    list-style: none;
-}
-
-.navbar{
-    /* background-color: thistle; */
-}
-
-.nav-links{
-   display: flex;
-   justify-content: space-around;
-}
-
-.nav-links>li{
-    width: 100%;
-    padding: 8px;
-    text-align: center;
-    font-size: 1.3em;
-    color: #f3f3f3;
-
-}
-
-.nav-links>li:hover{
-    background-color: var(--menuLinkBg);
-    cursor: pointer;
-}
-
-.nav-links>li>a{
-    color: #f3f3f3;
-}
-
-/* SECCION MAIN */
+/* FIN DE CONTACTO */
