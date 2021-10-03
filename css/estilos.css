@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=ZCOOL+KuaiLe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Raleway:ital,wght@1,600&family=ZCOOL+KuaiLe&display=swap');
+
+:root{
+    --bgColor: #3d5a80;
+    --secondaryBg: #98c1d9;
+    --menuLinkBg: #293241;
+}
 
 *{
     margin: 0;
@@ -8,31 +12,32 @@
     box-sizing: border-box;
 }
 
+html{
+    background-color: var(--bgColor);
+    width: 100%;
+}
+
 body{
-    background-color: #eee;
-    color: #333;
-    /*font-family: 'Hina Mincho', serif;*/
-    /*font-family: 'ZCOOL KuaiLe', cursive;*/
+    color: #f3f3f3;
     font-family: 'Raleway', sans-serif;
+    background-color: var(--bgColor);
 }
 
 a{
     text-decoration: none;
-    /* color: white; */
 }
 
+/* SECCION HEADER */
+
 header {
-    border: 2px red solid;
-    background-color: teal;
     display: flex;
     flex-direction: column;
-
+    width: 100%;
 }
 
 header .brand{
     display: flex;
     flex-direction: column;
-    /* color: white; */
     text-align: center;
     padding: 5px 0 10px 0;
     font-size: 1.4em;
@@ -43,7 +48,7 @@ ul li{
 }
 
 .navbar{
-    background-color: thistle;
+    /* background-color: thistle; */
 }
 
 .nav-links{
@@ -51,14 +56,22 @@ ul li{
    justify-content: space-around;
 }
 
-.nav-links li{
+.nav-links>li{
     width: 100%;
     padding: 8px;
     text-align: center;
     font-size: 1.3em;
+    color: #f3f3f3;
+
 }
 
-.nav-links li:hover{
-    background-color: teal;
+.nav-links>li:hover{
+    background-color: var(--menuLinkBg);
+    cursor: pointer;
 }
 
+.nav-links>li>a{
+    color: #f3f3f3;
+}
+
+/* SECCION MAIN */
