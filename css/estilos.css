@@ -11,6 +11,7 @@ body{
 header{
     background-color: #CD5C5C;
     padding: 16px 0;
+    max-height: 150px;
 }
 
 header img{
@@ -75,9 +76,11 @@ div .testimonio{
 
 footer{
     background-color: #ccc;
+    margin-top: 10px;
     padding: 20px;
     text-align: center;
     clear: both;
+    /* border-top: 5px solid black; */
 }
 
 .holder{
@@ -172,7 +175,26 @@ h2{
 /* Fin de NOSOTROS */
 
 
+/* INICIO NOVEDADES */
 
+main .novedades{
+    /* border: 1px solid black; */
+    border-left: 10px solid #FFA07A;
+    border-radius: 10px;
+    margin-top: 6px;
+    padding-left: 10px;
+}
+
+main .novedades:hover{
+	box-shadow: 1px 1px 5px 3px grey;
+    transform: translateY(-2%);
+}
+
+.novedades h3{
+    padding-top: 8px;
+}
+
+/* FIN NOVEDADES */
 
 
 /* INICIO CONTACTO */
