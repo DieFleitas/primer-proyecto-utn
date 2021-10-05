@@ -217,17 +217,42 @@ main .novedades:hover{
 
 
 /* INICIO CONTACTO */
-.contacto,
-.redes{
-    width: 50%;
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacto{
-    float: left;
+    width: 90%;
+    margin: 40px 0 20px 0;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+                 -35px -35px 70px #ffffff;
 }
 
 .redes{
-    float: right;
+    width: 90%;
+    margin: 20px 0 20px 0;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+                 -35px -35px 70px #ffffff;
+
+}
+
+.contacto, .redes h2{
+    font-weight: bold;
+}
+
+.contacto, .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .redes p{
@@ -235,10 +260,14 @@ main .novedades:hover{
 }  
 
 .contacto,
-.redes,
+.redes
 ul{
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .redes li{
@@ -249,10 +278,18 @@ ul{
     text-decoration: none;
 }
 
+.contacto .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 .formulario label{
     width: 22%;
     display: inline-block;
-    vertical-align: top;
+    margin: 20px;
 }
 
 .formulario input,
